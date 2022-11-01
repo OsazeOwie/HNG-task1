@@ -88,9 +88,10 @@
   display: flex;
   justify-content: center;
   border-radius: 8px;
-  padding: 1.5em 4em;
+  padding: 1.5em 0em;
   background-color: rgba(234, 236, 240, 1);
   text-decoration: none;
+  word-wrap: none;
 }
 
 .link-style:hover {
