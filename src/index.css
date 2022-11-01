@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  color: rgba(16, 24, 40, 1);
+  font-family: 'Inter', sans-serif;
+}
+
+.mainsection {
+  padding: 0 5em;
+  margin: 0 auto;
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+
+.content {
+  margin: 0 auto;
+}
+
+
+.profile {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-con {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 2.5em;
+}
+
+.share {
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 100px;
+}
+
+.mobile-share {
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  display: none;
+}
+
+
+.pro-img {
+  background: url(./assets/user.JPG) rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.pro-img:hover {
+  background-blend-mode: darken;
+}
+
+.cam {
+  opacity: 0;
+  margin-top: 55px;
+}
+
+.pro-img:hover .cam {
+  opacity: 1;
+}
+
+.link-section {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.link-style {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 1.5em 4em;
+  background-color: rgba(234, 236, 240, 1);
+  text-decoration: none;
+}
+
+.link-style:hover {
+  background: rgba(208, 213, 221, 1);
+}
+
+.socials {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer {
+  max-width: 1116px;
+  margin: 0 auto;
+  margin-top: 160px;
+}
+
+.foot-socials {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-top: 1px solid rgba(234, 236, 240, 1);
+  padding: 32px;
+}
+
+@media (max-width: 768px) {
+  .mainsection {
+    padding: 0 2em;
+  }
+
+  .share {
+    display: none;
+  }
+
+  .mobile-share {
+    display: block;
+  }
+
+  .foot-socials {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
