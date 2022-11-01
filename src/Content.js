@@ -1,11 +1,21 @@
 
+import { useState } from 'react'
 import cam from './assets/camera-01.svg'
 import share from './assets/desShare.svg'
+import shareHover from './assets/hoverShare.svg'
 import mobile from './assets/mobileShare.svg'
 
 
 const Content = () => {
+    const [shareBtn, setShare] = useState(share);
 
+    const handleHover = () => {
+        setShare(shareHover);
+    };
+
+    const handleHoverOut = () => {
+        setShare(share);
+    }
    
     return ( 
         <main className="content">
@@ -14,7 +24,7 @@ const Content = () => {
                     <div className="pro-img" id='profile__img'>
                         <img src={cam} alt="" className='cam' />
                     </div>
-                   <img src={share}  alt="" className='share'/>
+                   <img src={shareBtn} onMouseEnter={handleHover} onMouseLeave={handleHoverOut}  alt="" className='share'/>
                    <img src={mobile} alt="" className='mobile-share' />
                 </div>
                 <p id='twitter'>OZ</p>
