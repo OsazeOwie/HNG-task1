@@ -4,6 +4,7 @@ const Contact = () => {
     const [textArea, setTextArea] = useState('');
     const [className, setClassName] = useState(null);
     const [isValid, setIsValid] = useState(false);
+    const name = 'Osaze';
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -48,7 +49,7 @@ const Contact = () => {
                     </div>
 
                     <label className='check'>
-                        <input required type="checkbox" /> You agree to providing your data to Osaze who may contact you.
+                        <input required type="checkbox" /> You agree to providing your data to {name} who may contact you.
                     </label>
                     
                 
