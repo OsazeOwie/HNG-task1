@@ -198,13 +198,14 @@
 
 .check {
   display: flex;
+  align-items: flex-start;
   gap: 5px;
   color: #475467;
 }
 
 .check span {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.2;
   color: #475467;
 }
@@ -272,6 +273,6 @@
   }
 
   .check span{
-    font-size: 10px;
+    font-size: 12px;
   }
 }
