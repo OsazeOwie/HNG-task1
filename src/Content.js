@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import cam from './assets/camera-01.svg';
 import share from './assets/desShare.svg';
 import shareHover from './assets/hoverShare.svg';
@@ -41,7 +42,7 @@ const Content = () => {
                     <a href="https://books.zuri.team/python-for-beginners?ref_id=Osaze Owie" title='Buy my python books here' className="link-style"  id='book__python'>Python Books</a>
                     <a href="https://background.zuri.team" title='Get thorough background checks of coders here' className="link-style" id='pitch'>Background Check for Coders</a>
                     <a href="https://books.zuri.team/design-rules" title='Get design books for free' className="link-style" id='book__design'>Design Books</a>
-                    <a href="/contact" className="link-style" id='contact'>Contact Me</a>
+                    <Link to="/contact" className="link-style" id='contact'>Contact Me</Link>
                 </div>
             </main>
 
